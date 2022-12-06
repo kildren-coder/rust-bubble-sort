@@ -60,7 +60,7 @@ mod test_data {
 /// ```
 pub fn bubble_sort<T>(array: &mut [T]) -> usize
 where
-    T: PartialOrd + Default + Debug,
+    T: PartialOrd + Default,
 {
     if array.is_empty() {
         return 0;
